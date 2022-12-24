@@ -8,6 +8,8 @@ const SignUp = () => {
   const handleSignUp = () => {
     console.log("I am clicked");
   };
+
+  // 
   const signUp = () => {
     Axios.post("http://localhost:5000/signup", user).then((res) => {
       const { token, userId, firstName, lastName, username, hashedPassword } =
